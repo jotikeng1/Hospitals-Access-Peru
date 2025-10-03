@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2312c0f57d706caf997033c46468ecee {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2312c0f57d706caf997033c46468ecee" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2312c0f57d706caf997033c46468ecee = L.map(
+                "map_2312c0f57d706caf997033c46468ecee",
+                {
+                    center: [-12.051530214999957, -77.03187863799997],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 9,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_2312c0f57d706caf997033c46468ecee);
+
+            
+
+        
+    
+            var tile_layer_02ec8853bec168c9e395d49e143f8770 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_02ec8853bec168c9e395d49e143f8770.addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            var marker_1d71a4b881ac73a9f012a419a2c1624b = L.marker(
+                [-12.051530214999957, -77.03187863799997],
+                {
+}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            var icon_7a80722d4563fcf2b79389ace244742c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_1d71a4b881ac73a9f012a419a2c1624b.bindTooltip(
+                `<div>
+                     LIMA: mayor concentración (34)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1d71a4b881ac73a9f012a419a2c1624b.setIcon(icon_7a80722d4563fcf2b79389ace244742c);
+            
+    
+            var circle_041df3f9aaf4269676cbcccef4fa3d9a = L.circle(
+                [-12.051530214999957, -77.03187863799997],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.1, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10000, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            var circle_marker_d6a499734515fa67584598e3e96b507b = L.circleMarker(
+                [-12.0917981, -77.0086722],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_d6a499734515fa67584598e3e96b507b.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e66b426dc0196ce98af2d1403dda38c9 = L.circleMarker(
+                [-12.0157493, -77.0979946],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_e66b426dc0196ce98af2d1403dda38c9.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_80e14e574f78f7ca6784b96bcbb721c1 = L.circleMarker(
+                [-11.97723, -77.0656159],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_80e14e574f78f7ca6784b96bcbb721c1.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_09be0a29a3566da84ad09f4eb8d2f25c = L.circleMarker(
+                [-12.0871197, -77.0619786],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_09be0a29a3566da84ad09f4eb8d2f25c.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9fd6743ad9bc1819162f9855128aa052 = L.circleMarker(
+                [-12.090915, -77.028305],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_9fd6743ad9bc1819162f9855128aa052.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4e97e95c29c6fbbc2497afc028e61861 = L.circleMarker(
+                [-12.04757833, -76.947995],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_4e97e95c29c6fbbc2497afc028e61861.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_eb04f0cbbc1f367b7da9cc5d61bc6e99 = L.circleMarker(
+                [-12.09036833, -77.01813667],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_eb04f0cbbc1f367b7da9cc5d61bc6e99.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_821780346b61fc9432e6a26dd00c4fc6 = L.circleMarker(
+                [-12.0639353, -77.1214128],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_821780346b61fc9432e6a26dd00c4fc6.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_ce7c68fa3c3b9daf66b24fde43ab3c33 = L.circleMarker(
+                [-12.0860498, -77.0540661],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_ce7c68fa3c3b9daf66b24fde43ab3c33.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_05b8856f199170ded3bbcead4197d590 = L.circleMarker(
+                [-12.0443408, -77.0440331],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_05b8856f199170ded3bbcead4197d590.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1c9a47acc74382625693ed51fe099f1a = L.circleMarker(
+                [-12.0589571, -77.0312779],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_1c9a47acc74382625693ed51fe099f1a.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_7c1f521f3cf9a11bc5bc737b799f83da = L.circleMarker(
+                [-12.0571705, -77.0162686],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_7c1f521f3cf9a11bc5bc737b799f83da.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1aed3e9ec4cf31d235965746fa896bd3 = L.circleMarker(
+                [-12.062131, -76.9455439],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_1aed3e9ec4cf31d235965746fa896bd3.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1d0c183c696958d0dacf13e1f1362543 = L.circleMarker(
+                [-12.098705, -77.065756],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_1d0c183c696958d0dacf13e1f1362543.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_dfee928d9fdbfc22595f30e4ddefa1d0 = L.circleMarker(
+                [-12.0498454, -77.0425597],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_dfee928d9fdbfc22595f30e4ddefa1d0.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b9bde4a33d3adcb7ad92373b612a7e76 = L.circleMarker(
+                [-12.1136234, -77.0279933],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_b9bde4a33d3adcb7ad92373b612a7e76.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c1986542f9a09863267643faeaf26d52 = L.circleMarker(
+                [-12.04273444, -77.09846168],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_c1986542f9a09863267643faeaf26d52.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9d173e4c1fec543f37532dd583e958e8 = L.circleMarker(
+                [-12.0617901, -77.0901374],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_9d173e4c1fec543f37532dd583e958e8.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_65f7ddcb412b61327e1ea1b7f61f4fea = L.circleMarker(
+                [-12.10342333, -77.029825],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_65f7ddcb412b61327e1ea1b7f61f4fea.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_9fc980de3b2774b4f006be8068f65631 = L.circleMarker(
+                [-12.046374, -77.0427934],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_9fc980de3b2774b4f006be8068f65631.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_b2bf5387d35aa3c2c817c007d4928f67 = L.circleMarker(
+                [-12.0399743, -76.9935755],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_b2bf5387d35aa3c2c817c007d4928f67.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f5bb317d5ff116942835ba41374bb825 = L.circleMarker(
+                [-12.0468271, -76.9454975],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_f5bb317d5ff116942835ba41374bb825.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_f02484494503b4e9dfcd0ff9c52560ac = L.circleMarker(
+                [-12.0659612, -77.0945832],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_f02484494503b4e9dfcd0ff9c52560ac.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1ed636fad8760f57bd7f27f6623216d5 = L.circleMarker(
+                [-11.9665774, -77.0030573],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_1ed636fad8760f57bd7f27f6623216d5.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_6bd843b9074fc5f4006515e7f6c61e58 = L.circleMarker(
+                [-12.0927846, -77.0357886],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_6bd843b9074fc5f4006515e7f6c61e58.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_4333178b3999fbd8ddf4c2c6b2eb7714 = L.circleMarker(
+                [-12.0839746, -77.0611078],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_4333178b3999fbd8ddf4c2c6b2eb7714.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_1b7d7cbf87319f31fd9c0279bf9970a7 = L.circleMarker(
+                [-12.0581708, -77.0217293],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_1b7d7cbf87319f31fd9c0279bf9970a7.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_2f2b9eac37169cedc6a523a0233fbae3 = L.circleMarker(
+                [-12.0220216, -77.0544967],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_2f2b9eac37169cedc6a523a0233fbae3.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c94ef910237baff48d792260804d11fc = L.circleMarker(
+                [-12.1282107, -77.0180619],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_c94ef910237baff48d792260804d11fc.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_0276fe3eaa97cb7277ec327b3c4fb26d = L.circleMarker(
+                [-12.0716016, -77.0610651],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_0276fe3eaa97cb7277ec327b3c4fb26d.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_a6863a167c10a2117a42bb6571272e73 = L.circleMarker(
+                [-12.10011333, -76.971695],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_a6863a167c10a2117a42bb6571272e73.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_e6a1af1b27b66be943a02ebc0fc886fa = L.circleMarker(
+                [-12.0499179, -77.0423608],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_e6a1af1b27b66be943a02ebc0fc886fa.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_268ebb11b3311c6e140d57d066c457ed = L.circleMarker(
+                [-12.07636667, -77.09578],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_268ebb11b3311c6e140d57d066c457ed.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var circle_marker_c6353eab509f2dd0ae4dae6adf138d8d = L.circleMarker(
+                [-12.0491962, -77.1076748],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4, "stroke": true, "weight": 3}
+            ).addTo(map_2312c0f57d706caf997033c46468ecee);
+        
+    
+            circle_marker_c6353eab509f2dd0ae4dae6adf138d8d.bindTooltip(
+                `<div>
+                     Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>
