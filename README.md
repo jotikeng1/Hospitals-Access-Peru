@@ -17,7 +17,7 @@ Fuentes de datos
 
 ---
 Integrantes:
-Grabiel Arellano Morán
-Romel Contreras Valenzuela
-Eduardo Magno Fabian
-Lizeth Moreno Gomez
+* Grabiel Arellano Morán
+* Romel Contreras Valenzuela
+* Eduardo Magno Fabian
+* Lizeth Moreno Gomez
